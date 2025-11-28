@@ -1,58 +1,12 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafik Bitcoin Realtime</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>📈 Grafik Bitcoin Realtime</h1>
-        <div class="controls">
-            <button id="start-btn">Mulai Realtime</button>
-            <button id="stop-btn">Stop Realtime</button>
-            <button id="reset-btn">Reset Grafik</button>
-        </div>
-    </header>
-
-    <main>
-        <div class="card">
-            <div class="price-display" id="current-price">Loading harga BTC...</div>
-            
-            <div class="chart-container">
-                <canvas id="realtime-chart"></canvas>
-            </div>
-            
-            <div class="info-panel">
-                <div class="info-item">
-                    <div>Data Points</div>
-                    <div class="info-value" id="data-points">0</div>
-                </div>
-                <div class="info-item">
-                    <div>Min Price</div>
-                    <div class="info-value" id="min-price">-</div>
-                </div>
-                <div class="info-item">
-                    <div>Max Price</div>
-                    <div class="info-value" id="max-price">-</div>
-                </div>
-                <div class="info-item">
-                    <div>Last Update</div>
-                    <div class="info-value" id="last-update">-</div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <small>Data diperoleh dari Alpha Vantage API. Update setiap 20 detik.</small>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="app.js"></script>
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crypto Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
-  
